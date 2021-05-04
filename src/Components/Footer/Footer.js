@@ -1,14 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React,{useEffect} from 'react';
+import './Footer.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <h1> Mike Leroux</h1>
-      </header>
-    </div>
-  );
-}
+function Footer() {
+    return (
+      <div className="footer">
 
-export default App;
+        <ul className= "links">
+          <li>
+          <a href="https://github.com/Versey"><i className="fab fa-github"/></a>
+          </li>
+          
+          <li>
+          <a href="https://www.facebook.com/mike.leroux.18/"><i className="fab fa-facebook"></i></a>
+          </li>
+
+          <li>
+          <a href="https://www.linkedin.com/in/michael-leroux-538170121/"><i className="fab fa-linkedin"></i></a>
+          </li>
+        </ul>
+
+      </div>
+    );
+  }
+
+export default Footer;

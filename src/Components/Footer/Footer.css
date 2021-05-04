@@ -1,0 +1,33 @@
+.footer{
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    background-color: #10345a;
+    display: flex;
+}
+
+.footer ul{
+    list-style-type: none;
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+    overflow: hidden;
+    
+}
+
+.footer li{
+    float: left;
+}
+
+.footer li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+.footer li :hover{
+    background: #0b233c;
+
+}

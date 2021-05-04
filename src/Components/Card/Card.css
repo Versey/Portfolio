@@ -1,18 +1,24 @@
 .card{
     -webkit-box-shadow: -5px 8px 10px -3px rgba(0,0,0,0.42); 
     box-shadow: -5px 8px 10px -3px rgba(0,0,0,0.42);
-    margin:10px;
-    margin-bottom: 100px;
-    background:white;
+    margin:20px;
     min-width: 525px;
     min-height: 250px;
-    padding: 20px;    
-
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    float: right;
+    background:#F5FFFA;
+    margin-top: -14rem;
 }
 
 .card-container{
-    display: flex;
-    flex-direction: row;
+
+}
+
+.card-header{
+    
 }
 
 .card-header h2{
@@ -24,8 +30,7 @@
 
 .card-content
 {
-    display: flex;
-    max-width: 800px;
+    max-width: 1200px;
     color: black;
     text-align: left;
     font-size: 18px;
@@ -36,5 +41,6 @@
 
 .card-photo-right{
     height: 250px;
+    border-radius: 15px;
 
 }

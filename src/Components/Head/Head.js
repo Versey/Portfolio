@@ -8,8 +8,7 @@ function Head() {
         <hgroup id="head-title">
           <img id="head-photo" src ={process.env.PUBLIC_URL +'/Media/me.jpg'}/>
           <h1> Mike Leroux </h1>
-          <h4> Full Stack Developer - Designer - Artist</h4>
-          <a href="https://github.com/Versey">Github</a>
+          <h4> Full Stack Developer, Designer, Artist</h4>
         </hgroup>
       </div>
 

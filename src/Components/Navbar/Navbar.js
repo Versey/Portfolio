@@ -3,11 +3,10 @@ import './Navbar.css';
 
 function Navbar() {
     return (
-      <nav id="navbar">
-          <a href="#About">About me</a>
-          <a href="#Web">Web</a>
-          <a href="#Art">Art</a>
-      </nav>
+
+    <nav className="navbar sticky-top navbar-light bg-light">
+      <a className="navbar-brand" href="#">About me</a>
+    </nav>
     );
   }
 
