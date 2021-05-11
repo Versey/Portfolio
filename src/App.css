@@ -27,9 +27,13 @@ ul {
   fill: red;
 }
 
+.image-brands{
+  height: 6rem;
+}
 .skills-tech{
   display: flex;
   max-width: 1200px;
+  justify-content: center;
 }
 .skills-tech i{
   letter-spacing: 2rem;
@@ -61,8 +65,9 @@ ul {
   width: 100%;
   justify-content: center;
   margin: auto;
-  padding-bottom:18rem;
-  padding-top: 5rem;
+  padding-bottom: 10rem;
+  padding-top:4rem;
+  
 }
 
 .section-skills{
@@ -81,8 +86,6 @@ ul {
   width: 100%;
   justify-content: center;
   margin: auto;
-  padding-top: 5rem;
-  padding-bottom:18rem;
 
 }
 
@@ -92,27 +95,27 @@ ul {
   width: 100%;
   justify-content: center;
   margin: auto;
-  padding-bottom:18rem;
 
 }
 
-section-content-column
+.section-content-column
 {
   display: flex;
   flex-direction: column;
+  
 }
 .column{
   padding: 30px;
-  min-width: 400px;
   text-align: center;
+  max-width: 33%;
 }
 
 .column-border{
   padding: 30px;
-  min-width: 400px;
   text-align: center;
   border-left: 1px solid;
   border-right:1px solid;
+  max-width: 33%;
 }
 
 .column h4{
@@ -133,4 +136,48 @@ section-content-column
 
 .column-border h5{
   text-align: center;
+}
+
+
+.bg {
+  animation:slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
+  bottom:0;
+  left:-50%;
+  opacity:.5;
+  position:fixed;
+  right:-50%;
+  top:0;
+  z-index:-1;
+}
+
+.bg2 {
+  animation-direction:alternate-reverse;
+  animation-duration:4s;
+}
+
+.bg3 {
+  animation-duration:5s;
+}
+
+.content {
+  background-color:rgba(255,255,255,.8);
+  border-radius:.25em;
+  box-shadow:0 0 .25em rgba(0,0,0,.25);
+  box-sizing:border-box;
+  left:50%;
+  padding:10vmin;
+  position:fixed;
+  text-align:center;
+  top:50%;
+  transform:translate(-50%, -50%);
+}
+
+@keyframes slide {
+  0% {
+    transform:translateX(-25%);
+  }
+  100% {
+    transform:translateX(25%);
+  }
 }

@@ -10,7 +10,6 @@
     flex-direction: row;
     float: right;
     background:#F5FFFA;
-    margin-top: -14rem;
 }
 
 .card-container{
@@ -18,14 +17,21 @@
 }
 
 .card-header{
-    
+    background-color: transparent !important;
+    border-bottom: none !important;
+}
+.card-header h1{
+    color: black;
+    background-color: white;
+    border-bottom: 0 !important;
+    font-size: 2rem;
 }
 
 .card-header h2{
     color:black;
     padding: 10px;
     margin: 0;
-    font-size: 30px;
+    font-size: 1.8rem;
 }
 
 .card-content
@@ -33,14 +39,14 @@
     max-width: 1200px;
     color: black;
     text-align: left;
-    font-size: 18px;
+    font-size: 1.2rem;
     padding: 10px;
     
 
 }
 
 .card-photo-right{
-    height: 250px;
+    height: 10 rem;
     border-radius: 15px;
 
 }

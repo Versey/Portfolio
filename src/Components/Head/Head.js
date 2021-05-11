@@ -1,6 +1,6 @@
 import './Head.css';
 
-function Head() {
+const Head = (props) =>{
   return (
     <header id="head">
 

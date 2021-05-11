@@ -1,17 +1,22 @@
 import './App.css';
 import Card from './Components/Card/Card';
 import Head from './Components/Head/Head';
-import Navbar from './Components/Navbar/Navbar';
 import Footer from './Components/Footer/Footer';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
+import {Navbar} from 'react-bootstrap'
+import {Carousel} from 'react-bootstrap'
+import {Button} from 'react-bootstrap'
+import {Nav} from 'react-bootstrap'
+import {NavDropdown} from 'react-bootstrap'
+import {Form} from 'react-bootstrap'
+import {FormControl} from 'react-bootstrap'
 
 
 
-function App() {
+const App = ()=> {
   return (
     <div className="App">
-    
     <Head></Head>
     
     <section className="section-about-me">
@@ -39,101 +44,44 @@ function App() {
       <div className="section-content">
       <Card
             content={
+              
+              
             <div className="skills-tech">
+            
+            
 
             <div className="column">
             <img className="icon-svg" src={process.env.PUBLIC_URL +'/Media/icons/design.svg'}/>
               <h4> Design</h4>
-
-              <h5> Databases </h5>
-              <ul>
-                <li> Microsoft SQL</li>
-                <li> MongoDB</li>
-                <li> MySQL</li>
-                <li> PostgreSQL</li>
-              </ul>
-
-              <h5> Databases </h5>
-              <ul>
-                <li> Microsoft SQL</li>
-                <li> MongoDB</li>
-                <li> MySQL</li>
-                <li> PostgreSQL</li>
-              </ul>
-
-              <h5> Databases </h5>
-              <ul>
-                <li> Microsoft SQL</li>
-                <li> MongoDB</li>
-                <li> MySQL</li>
-                <li> PostgreSQL</li>
-              </ul>
+              <p> Adobe Photoshop, Adobe Illustrator, ZBrush, Autodesk Maya, Blender, Webflow</p>
 
             </div>
 
             <div className="column-border">
               <img className="icon-svg" src={process.env.PUBLIC_URL +'/Media/icons/code.svg'}/>
               <h4> Development</h4>
-              <h5> Frameworks </h5>
+              <h5> Frameworks/Libraries</h5>
 
-              <ul>
-                <li> React + React Native</li>
-                <li> Angular </li>
-                <li> ASP.NET Core</li>
-                <li> DJango</li>
-                <li> JQuery</li>
-                <li> Bootstrap </li>
-                <li> Express </li> 
-              </ul>
+              <p>React + React Native, Angular, ASP.NET Core, DJango, JQuery, Bootstrap, Express </p>
 
               <h5> Languages </h5>
-
-              <ul>
-                <li> C</li>
-                <li> C#</li>
-                <li> C++ </li>
-                <li> JavaScript</li>
-                <li> Java</li>
-                <li> Python </li>
-                <li> Ruby </li>
-              </ul>
-
+              <p> C, C++, C#, Java, JavaScript, Python, Ruby</p>
 
               <h5> Databases </h5>
               <ul>
-                <li> Microsoft SQL</li>
-                <li> MongoDB</li>
-                <li> MySQL</li>
-                <li> PostgreSQL</li>
+                <p> Microsoft SQL, MongoDB, MySQL, PostgreSQL</p>
               </ul>
 
               <h5> Dev Tools</h5>
               <ul>
-                <li> Docker</li>
-                <li> Jenkins CI</li>
-                <li> Travis CI</li>
+                <p> Docker, Jenkins CI, Travis CI</p>
               </ul>
             </div>
 
             <div className="column">
             <img className="icon-svg" src={process.env.PUBLIC_URL +'/Media/icons/tools.svg'}/>
               <h4> Software</h4>
-
-              <h5> Databases </h5>
-              <ul>
-                <li> Microsoft SQL</li>
-                <li> MongoDB</li>
-                <li> MySQL</li>
-                <li> PostgreSQL</li>
-              </ul>
-
-              <h5> Databases </h5>
-              <ul>
-                <li> Microsoft SQL</li>
-                <li> MongoDB</li>
-                <li> MySQL</li>
-                <li> PostgreSQL</li>
-              </ul>
+              <p> Docker, Jenkins CI, Travis CI</p>
 
             </div>
 
@@ -150,13 +98,23 @@ function App() {
       <div className="section-header"> <h1> Just some of the work I've done.</h1></div>
 
         <div className="section-content">
+          <img className="image-brands" src={process.env.PUBLIC_URL +"/Media/logo_rounded.png"}/>
+        
 
         </div>
     </div>
     </section>
 
-    <section className="section-projects"> </section>
-    <section className="section-art"> </section>
+    <section className="section-projects">
+      
+       
+    
+    
+    </section>
+
+    <section className="section-art">
+
+    </section>
     <Footer></Footer>
     
     </div>

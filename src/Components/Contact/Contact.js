@@ -1,6 +1,7 @@
 import './Contact.css';
 
-function Contact() {
+const Contact = (props) =>
+{
   return (
       <div>Hi</div>
   );
